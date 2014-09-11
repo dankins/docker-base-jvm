@@ -1,10 +1,10 @@
 # Ghost
 #
 # VERSION               0.0.1
-# BUILD-USING:        docker build -t docker-base-jvm .
-# PUSH-USING:         docker tag base-jvm surf/docker-base-jvm  && docker push surf/docker-base-jvm
+# BUILD-USING:        docker build -t base-jvm .
+# PUSH-USING:         docker tag base-jvm surf/base-jvm  && docker push surf/base-jvm
 
-FROM      surf/docker-base
+FROM      surf/base
 MAINTAINER Dan Kinsley <dan@surfbeta.com>
 
 # repository for java7
