@@ -2,9 +2,9 @@
 #
 # VERSION               0.0.1
 # BUILD-USING:        docker build -t base-jvm .
-# PUSH-USING:         docker tag base-jvm quay.io/queue/base-jvm  && docker push quay.io/queue/base-jvm
+# PUSH-USING:         docker tag base-jvm surf/base-jvm  && docker push surf/base-jvm
 
-FROM      quay.io/queue/base
+FROM      surf/docker-base
 MAINTAINER Dan Kinsley <dan@queuenetwork.com>
 
 # repository for java7
@@ -20,5 +20,4 @@ RUN sudo apt-get update && apt-get install -y \
 	--no-install-recommends \
 	 default-jre
 
-# Launch titan when launching the container
 CMD ["/bin/bash"]
